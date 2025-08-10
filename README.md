@@ -7,3 +7,19 @@ Different sites should be relegated to their separate script files.
 Currently implemented:
 
 - [Kakuyomu](./kakuyomu.py)
+
+## Requirements
+
+- BeautifulSoup 4, aforementioned.
+
+Install all required libraries via pip:
+  
+```sh
+pip install -r requirements.txt
+```
+
+## Usage
+
+```sh
+python main.py
+```
