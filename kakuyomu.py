@@ -28,11 +28,10 @@ chapter_title = parsed_doc.find(
 
 # This grabs ALL <p> elements with id='p[any number]' and no class.
 # Kakuyomu uses this id type for regular text...
-# but ALSO uses `class="blank"` for extra newlines, which we don't want.
+# but ALSO adds `class="blank"` for extra newlines, which we don't want.
 paragraphs = parsed_doc.find_all("p", id=re.compile(r"p\d"), class_=None)
 
 # Now let's use the chapter title as our filename.
-# Don't forget the humble f-string!
 output = f"{work_title}/{chapter_title}.csv"
 
 # Let's make a subdirectory for the work to host all the constituent chapters.
