@@ -10,6 +10,7 @@ Currently implemented:
 
 ## Requirements
 
+- Python ~ 3.13. I use [mise](https://mise.jdx.dev/) for managing the version through [mise.toml](mise.toml).
 - BeautifulSoup 4, aforementioned.
 
 Install all required libraries via pip:

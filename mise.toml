@@ -1,2 +1,9 @@
 [tools]
 python = "3.13"
+
+[env]
+_.python.venv = { path = ".venv", create = true }
+
+[tasks.pip]
+description = "Install required Python libraries."
+run = "pip install -r requirements.txt"
